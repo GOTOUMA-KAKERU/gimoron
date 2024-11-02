@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Zen+Maru+Gothic&display=swap');
+.kiwi-maru-regular {
+    font-family: "Kiwi Maru", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 html body{
+    font-family: "Kiwi Maru";
     margin: 0;
     display: grid;
     grid-template-columns: 60px 180px 1fr;
 }
 
 #room{
-    background-color: antiquewhite;
+    background-color: #7c84f0;
     height: 100vh;
     grid-column: 1 / 2;
 }
@@ -30,7 +38,8 @@ html body{
         background: none;
         border: none;
         width: 52px;
-        margin: 0 4px 0 4px;
+        height: 52px;
+        margin: 0 4px 4px 4px;
         padding: 0;
         border-radius: 20%;
     }
@@ -42,14 +51,30 @@ html body{
     }
 
 
-#chat{
-background-color: blueviolet;
+#channel{
+background-color: #5a63e9;
 height: 100vh;
 grid-column: 2 / 3;
 }
+    #servername{
+        box-shadow: 0px 5px 5px -3px #00000048
+    }
+        #servername:hover{
+            background-color: #878ef1;
+        }
+        #servername h2{
+            font-size: 1.25em;
+            margin: 0;
+            padding: 0.25em 0 0.25em 4px;
+        }
+    #server_info:checked ~ #links01 li {
+        height: 54px;
+        opacity: 1;
+        /*https://magazine.techacademy.jp/magazine/19737*/
+    }
 
 #talk{
-    background-color: aqua;
+    background-color: #e1def0;
     height: 100vh;
     grid-column: 3 / 4;
 }
