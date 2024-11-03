@@ -18,7 +18,7 @@ html body{
     grid-column: 1 / 2;
 }
     #rooms{
-        height: calc(100vh - 50px);
+        height: calc(100vh - 60px);
     }
     #rooms img{
         width: 50px;
@@ -39,7 +39,7 @@ html body{
         border: none;
         width: 52px;
         height: 52px;
-        margin: 0 4px 4px 4px;
+        margin: 0 4px 0 4px;
         padding: 0;
         border-radius: 20%;
     }
@@ -67,10 +67,42 @@ grid-column: 2 / 3;
             margin: 0;
             padding: 0.25em 0 0.25em 4px;
         }
-    #server_info:checked ~ #links01 li {
-        height: 54px;
-        opacity: 1;
-        /*https://magazine.techacademy.jp/magazine/19737*/
+
+        .channel_folder::before{
+            content: '';
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            background-image: url('./open.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        #server_info:checked ~ .channel_folder::before{
+            content: '';
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            background-image: url('./close.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        .channel_folder{
+            display: block;
+            margin: 0 0 0 0;
+            padding : 10px 0 0 15px;
+            line-height: 1;
+            font-size: 0.85em;
+            color :#fff;
+            cursor :pointer;
+        }
+        .channel_opener{
+            display: none;
+        }
+
+    #server_info:checked ~ #server_infos li {
+        display: none;
     }
 
 #talk{
