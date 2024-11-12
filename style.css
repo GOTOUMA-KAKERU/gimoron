@@ -176,5 +176,5 @@ grid-column: 2 / 3;
         }
         #send input:focus{
             outline: none;
-            box-shadow: inset 0px 0px 5px 0px #00000027;
+            box-shadow: inset 0px 0px 5px 0px #00000026;
         }
