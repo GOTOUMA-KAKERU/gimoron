@@ -57,7 +57,8 @@ height: 100vh;
 grid-column: 2 / 3;
 }
     #servername{
-        box-shadow: 0px 5px 5px -3px #00000048
+        box-shadow: 0px 5px 5px -3px #00000048;
+        height: 45px;
     }
         #servername:hover{
             background-color: #878ef1;
@@ -69,6 +70,22 @@ grid-column: 2 / 3;
             color: #fff;
         }
 
+    #channels{
+        margin-top: 7px;
+        height: calc(100vh - 102px);
+    }
+
+        .channel_folder{
+            display: block;
+            margin: 0 0 0 0;
+            margin : 0 7.5px 3px 7.5px;
+            padding: 3px 7.5px 3px 7.5px;
+            line-height: 1;
+            border-radius: 0.25em;
+            font-size: 0.85em;
+            color :#fff;
+            cursor :pointer;
+        }
         .channel_folder::before{
             content: '';
             display: inline-block;
@@ -92,6 +109,7 @@ grid-column: 2 / 3;
 
         #server_infos{
             padding-left: 0;
+            margin-top: 0;
         }
 
         #server_infos li{
@@ -106,26 +124,57 @@ grid-column: 2 / 3;
         #server_infos li:hover{
             background-color: #e1def083;
         }
-
-        .channel_folder{
-            display: block;
-            margin: 0 0 0 0;
-            padding : 10px 0 0 15px;
-            line-height: 1;
-            font-size: 0.85em;
-            color :#fff;
-            cursor :pointer;
+        .channel_folder:hover{
+            background-color: #e1def083;
         }
         .channel_opener{
             display: none;
         }
 
-    #server_info:checked ~ #server_infos li {
-        display: none;
+        #server_info:checked ~ #server_infos li {
+            display: none;
+        }
+
+    #account{
+        height: 50px;
+        display: flex;
+        box-shadow: 0px -5px 5px -3px #00000048;
     }
+        #account img{
+            margin: 10px 5px;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
+        #account p{
+            color: #fff;
+        }
 
 #talk{
     background-color: #e1def0;
     height: 100vh;
     grid-column: 3 / 4;
 }
+    #title{
+        height: 45px;
+    }
+    #talking{
+        height: calc(100vh - 95px);
+    }
+    #send{
+        height: 50px;
+        box-shadow: 0px -5px 5px -3px #00000048;
+        display: flex;
+    }
+        #send input{
+            border: none;
+            width: calc(100% - 100px);
+            padding: 0 10px;
+            height: 36px;
+            border-radius: 18px;
+            margin: 7px 0;
+        }
+        #send input:focus{
+            outline: none;
+            box-shadow: inset 0px 0px 5px 0px #00000027;
+        }
