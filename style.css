@@ -166,6 +166,15 @@ grid-column: 2 / 3;
         box-shadow: 0px -5px 5px -3px #00000048;
         display: flex;
     }
+        #file_select{
+            background: none;
+            border: none;
+            background-image: url(./file.svg);
+            background-size: cover;
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+        }
         #send input{
             border: none;
             width: calc(100% - 100px);
@@ -177,4 +186,14 @@ grid-column: 2 / 3;
         #send input:focus{
             outline: none;
             box-shadow: inset 0px 0px 5px 0px #00000026;
+        }
+
+        #messege_submit{
+            background: none;
+            border: none;
+            background-image: url(./send.svg);
+            background-size: cover;
+            width: 40px;
+            height: 40px;
+            margin: 5px;
         }
