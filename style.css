@@ -13,7 +13,7 @@ html body{
 }
 
 #room{
-    background-color: #7c84f0;
+    background-color: #58A5DC;
     height: 100vh;
     grid-column: 1 / 2;
 }
@@ -52,7 +52,7 @@ html body{
 
 
 #channel{
-background-color: #5a63e9;
+background-color: #658CA8;
 height: 100vh;
 grid-column: 2 / 3;
 }
@@ -61,7 +61,7 @@ grid-column: 2 / 3;
         height: 45px;
     }
         #servername:hover{
-            background-color: #878ef1;
+            background-color: #8ebfe2;
         }
         #servername h2{
             font-size: 1.25em;
@@ -166,21 +166,28 @@ grid-column: 2 / 3;
         box-shadow: 0px -5px 5px -3px #00000048;
         display: flex;
     }
-        #file_select{
+        .file_button{
             background: none;
             border: none;
-            background-image: url(./file.svg);
             background-size: cover;
             width: 40px;
             height: 40px;
             margin: 5px;
             border-radius: 50%;
         }
-        #file_select:hover{
+        .file_button:hover{
             background-color: #f5f5f5;
         }
+            #file_other{
+                background-image: url(./file_plus.svg);
+                margin-right: 0;
+            }
+            #file_select{
+                background-image: url(./file.svg);
+                margin-left: 0;
+            }
 
-        #send input{
+        #sendtext{
             border: none;
             width: calc(100% - 100px);
             padding: 0 10px;
@@ -188,11 +195,21 @@ grid-column: 2 / 3;
             border-radius: 18px;
             margin: 7px 0;
             box-shadow: 0px 0px 5px 0px #00000026;
+            display: flex;
+            align-items: center;  /* 縦方向の中央揃え */
         }
-        #send input:focus{
+        #sendtext textarea{
+            border: none;
+            height: 1.2em;
+            width: 100%;
+        }
+        #sendtext:has(textarea:focus){
+            box-shadow: inset 0px 0px 5px 0px #00000026;
+            background-color: #fafafa;
+        }
+        #sendtext textarea:focus{
             outline: none;
             background-color: #fafafa;
-            box-shadow: inset 0px 0px 5px 0px #00000026;
         }
 
         #messege_submit{
