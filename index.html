@@ -54,24 +54,6 @@
                 <button id="file_other" class="file_button"></button>
                 <button id="file_select" class="file_button"></button>
                 <div id="sendtext"><textarea id="sendtextarea" placeholder="メッセージを送信"></textarea></div>
-                <script>
-                    const textarea = document.getElementById('sendtextarea');
-                    const text = document.getElementById('sendtext');
-                    textarea.addEventListener('input', autoExpand);
-                
-                    function autoExpand(event) {
-                        if(event.target.scrollHeight <= 30){
-                            event.target.style.height = 'auto';  // 高さをリセット
-                            event.target.style.height = `1.2em`;
-                            console.log("shor");
-                            console.log(event.target.scrollHeight);
-                        }else{
-                            event.target.style.height = 'auto';  // 高さをリセット
-                            event.target.style.height = `${event.target.scrollHeight}px`;  // 内容に応じて高さを調整
-                            console.log(event.target.scrollHeight);
-                        }
-                    }
-                </script>
                 <button id="messege_submit"></button>
             </div>
         </div>
