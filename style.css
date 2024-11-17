@@ -202,19 +202,19 @@ grid-column: 2 / 3;
             display: flex;
             align-items: center;  /* 縦方向の中央揃え */
         }
-        #sendtext textarea{
-            border: none;
-            width: 100%;
-            resize: none;
-        }
-        #sendtext:has(textarea:focus){
-            box-shadow: inset 0px 0px 5px 0px #00000026;
-            background-color: #fafafa;
-        }
-        #sendtext textarea:focus{
-            outline: none;
-            background-color: #fafafa;
-        }
+            #sendtext textarea{
+                border: none;
+                width: 100%;
+                resize: none;
+            }
+            #sendtext:has(textarea:focus){
+                box-shadow: inset 0px 0px 5px 0px #00000026;
+                background-color: #fafafa;
+            }
+            #sendtext textarea:focus{
+                outline: none;
+                background-color: #fafafa;
+            }
 
         #messege_submit{
             background: none;
