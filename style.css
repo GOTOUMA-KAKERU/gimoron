@@ -27,6 +27,7 @@ html body{
         border-radius: 50%;
         border: 2px solid #000000;
     }
+
         #rooms img:first-child{
             margin-top: 5px;
         }
@@ -56,23 +57,10 @@ background-color: #658CA8;
 height: 100vh;
 grid-column: 2 / 3;
 }
-    #servername{
-        box-shadow: 0px 5px 5px -3px #00000048;
-        height: 45px;
-    }
-        #servername:hover{
-            background-color: #8ebfe2;
-        }
-        #servername h2{
-            font-size: 1.25em;
-            margin: 0;
-            padding: 0.25em 0 0.25em 4px;
-            color: #fff;
-        }
 
     #channels{
         margin-top: 7px;
-        height: calc(100vh - 102px);
+        height: calc(100vh - 57px);
     }
 
         .channel_folder{
@@ -155,77 +143,3 @@ grid-column: 2 / 3;
     height: 100vh;
     grid-column: 3 / 4;
 }
-    #title{
-        height: 45px;
-    }
-    #talking{
-        height: calc(100vh - 95px);
-    }
-        
-    #send{
-        width: calc(100% - 240px);
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        display: flex;
-        align-items: flex-end; /* 下に揃える */
-    }
-        .file_button{
-            background: none;
-            border: none;
-            background-size: cover;
-            width: 40px;
-            height: 40px;
-            margin: 5px;
-            border-radius: 50%;
-        }
-        .file_button:hover{
-            background-color: #f5f5f5;
-        }
-            #file_other{
-                background-image: url(./icons/file_plus.svg);
-                margin-right: 0;
-            }
-            #file_select{
-                background-image: url(./icons/file.svg);
-                margin-left: 0;
-            }
-
-        #sendtext{
-            border: none;
-            width: calc(100% - 100px);
-            padding: 10px 10px;
-            border-radius: 18px;
-            height: fit-content;
-            margin: 7px 0;
-            box-shadow: 0px 0px 5px 0px #00000026;
-            display: flex;
-            align-items: center;  /* 縦方向の中央揃え */
-        }
-            #sendtext textarea{
-                border: none;
-                width: 100%;
-                resize: none;
-            }
-            #sendtext:has(textarea:focus){
-                box-shadow: inset 0px 0px 5px 0px #00000026;
-                background-color: #fafafa;
-            }
-            #sendtext textarea:focus{
-                outline: none;
-                background-color: #fafafa;
-            }
-
-        #messege_submit{
-            background: none;
-            border: none;
-            background-image: url(./icons/send.svg);
-            background-size: cover;
-            width: 40px;
-            height: 40px;
-            margin: 5px 5px 5px 0;
-            border-radius: 50%;
-        }
-        #messege_submit:hover{
-            background-color: #f5f5f5;
-        }

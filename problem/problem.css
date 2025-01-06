@@ -36,15 +36,21 @@
 
         .card .watchbutton h3{
             margin: 0;
-            font-size: large;
+            font-size: x-large;
         }
 
-    .card .more img{
+    .card .more{
         height: 100px;
         width: 100px;
         border-radius: 0 20px 20px 0;
-        background-color: #4fadff;
+        background-color: #58A5DC;
     }
-    .card .more img:hover{
+
+    .card .more img{
+        height: 60px;
+        margin: 20px 20px 20px 15px;
+    }
+
+    .card .more:hover{
         background-color: #81c3fd;
     }
