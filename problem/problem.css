@@ -1,0 +1,50 @@
+#rooms a:first-child img{
+    border-radius: 20%;
+}
+
+#talk{
+    background-color: #cee5f9;
+    height: 100vh;
+
+}
+
+#talk h1{
+    margin: 5px;
+}
+
+#items{
+    margin-top: 1em;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    margin: 10px 20px;
+}
+
+    .card .watchbutton{
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        height: 80px;
+        width: calc(100% - 100px);
+        padding: 10px 20px;
+        border-radius: 20px 0 0 20px;
+    }
+    .card .watchbutton:hover{
+        background-color: #eff8ff;
+    }
+
+        .card .watchbutton h3{
+            margin: 0;
+            font-size: large;
+        }
+
+    .card .more img{
+        height: 100px;
+        width: 100px;
+        border-radius: 0 20px 20px 0;
+        background-color: #4fadff;
+    }
+    .card .more img:hover{
+        background-color: #81c3fd;
+    }

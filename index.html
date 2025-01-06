@@ -13,12 +13,12 @@
         
         <div id="room">
             <div id="rooms">
-                <a href=""><img src="image.jpeg" alt=""></a>
+                <a href="./problem/index.html"><img src="image.jpeg" alt=""></a>
                 <a href=""><img src="image.jpeg" alt=""></a>
                 <a href=""><img src="image.jpeg" alt=""></a>
                 <a href=""><img src="image.jpeg" alt=""></a>
             </div>
-            <button href="" id="setting"><img src="setting.png" alt=""></button>
+            <button href="" id="setting"><img src="../icons/setting.png" alt=""></button>
         </div>
 
         <div id="channel">
@@ -53,7 +53,8 @@
             <div id="send">
                 <button id="file_other" class="file_button"></button>
                 <button id="file_select" class="file_button"></button>
-                <div id="sendtext"><textarea rows="1" id="sendtextarea" placeholder="メッセージを送信"></textarea></div>
+                <div id="sendtext"><textarea oninput="this.style.height = 'auto'; this.style.height = this.scrollHeight + 'px';"
+                    style="overflow: hidden; width: 300px;" rows="1" id="sendtextarea" placeholder="メッセージを送信"></textarea></div>
                 <button id="messege_submit"></button>
             </div>
         </div>
