@@ -13,7 +13,7 @@ html body{
 }
 
 #room{
-    background-color: #58A5DC;
+    background-color: #4b718d;
     height: 100vh;
     grid-column: 1 / 2;
 }
@@ -21,18 +21,21 @@ html body{
         height: calc(100vh - 60px);
     }
     #rooms img{
-        width: 50px;
-        height: 50px;
+        width: 36px;
+        height: 36px;
+        padding: 7px;
         margin: 0 4px 0 4px;
-        border-radius: 50%;
-        border: 2px solid #000000;
+        border-radius: 20%;
     }
+        #rooms a{
+            border-radius: 20%;
+        }
 
         #rooms img:first-child{
             margin-top: 5px;
         }
         #rooms img:hover{
-            border-radius: 20%;
+            background-color: #689ec5;
         }
     
     #setting{
@@ -40,20 +43,20 @@ html body{
         border: none;
         width: 52px;
         height: 52px;
-        margin: 0 4px 0 4px;
         padding: 0;
-        border-radius: 20%;
     }
-    #setting:hover{
+    #setting img:hover{
         background-color: #ffffff95;
     }
     #setting img{
         width: 30px;
+        border-radius: 20%;
+        padding: 11px;
     }
 
 
 #channel{
-background-color: #658CA8;
+background-color: #283c4a;
 height: 100vh;
 grid-column: 2 / 3;
 }
@@ -139,7 +142,7 @@ grid-column: 2 / 3;
         }
 
 #talk{
-    background-color: white;
+    background-color: #eef4f8;
     height: 100vh;
     grid-column: 3 / 4;
 }

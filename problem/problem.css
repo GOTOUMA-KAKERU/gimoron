@@ -1,9 +1,4 @@
-#rooms a:first-child img{
-    border-radius: 20%;
-}
-
 #talk{
-    background-color: #cee5f9;
     height: 100vh;
 
 }
@@ -23,12 +18,12 @@
 }
 
     .card .watchbutton{
-        background-color: rgb(255, 255, 255);
+        background-color: #ffffff;
         text-decoration: none;
-        height: 80px;
+        height: 60px;
         width: calc(100% - 100px);
-        padding: 10px 20px;
-        border-radius: 20px 0 0 20px;
+        padding: 5px 20px;
+        border-radius: 10px 0 0 10px;
     }
     .card .watchbutton:hover{
         background-color: #eff8ff;
@@ -38,17 +33,20 @@
             margin: 0;
             font-size: x-large;
         }
+        .card .watchbutton p{
+            margin: 0;
+        }
 
     .card .more{
-        height: 100px;
+        height: 70px;
         width: 100px;
-        border-radius: 0 20px 20px 0;
+        border-radius: 0 10px 10px 0;
         background-color: #58A5DC;
     }
 
     .card .more img{
-        height: 60px;
-        margin: 20px 20px 20px 15px;
+        height: 50px;
+        margin: 10px 10px 10px 15px;
     }
 
     .card .more:hover{

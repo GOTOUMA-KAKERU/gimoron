@@ -39,6 +39,7 @@
         }
 
     #sendtext{
+        background-color: #ffffff;
         border: none;
         width: calc(100% - 100px);
         padding: 10px 10px;
@@ -53,6 +54,10 @@
             border: none;
             width: 100%;
             resize: none;
+        }
+        #sendtext:hover{
+            box-shadow: inset 0px 0px 5px 0px #00000026;
+            background-color: #fafafa;
         }
         #sendtext:has(textarea:focus){
             box-shadow: inset 0px 0px 5px 0px #00000026;
