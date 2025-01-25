@@ -30,11 +30,11 @@
         background-color: #f5f5f5;
     }
         #file_other{
-            background-image: url(../icons/file_plus.svg);
+            background-image: url(../others/icons/file_plus.svg);
             margin-right: 0;
         }
         #file_select{
-            background-image: url(../icons/file.svg);
+            background-image: url(../others/icons/file.svg);
             margin-left: 0;
         }
 
@@ -71,7 +71,7 @@
     #messege_submit{
         background: none;
         border: none;
-        background-image: url(../icons/send.svg);
+        background-image: url(../others/icons/send.svg);
         background-size: cover;
         width: 40px;
         height: 40px;
