@@ -1,0 +1,13 @@
+#talk{
+    height: 100vh;
+
+}
+
+#talk h1{
+    margin: 5px;
+}
+
+#items{
+    margin-top: 1em;
+    width: 100%;
+}
